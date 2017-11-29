@@ -1,0 +1,9 @@
+{% if all_genres %}
+    <ul>
+        {% for genre in all_genres%}
+            <li>{{ genre.name }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>No hay ningún género</h3>
+{% endif %}

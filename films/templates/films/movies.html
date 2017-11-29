@@ -1,0 +1,12 @@
+
+    <h3>{{ movies.count }} películas</h3>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                <b>Peícula:</b> {{ movie.title }},
+                <b>Generos:</b> {{ movie.list_of_genres }},
+                <b>Imbd:</b> {{movie.imdbId}},
+                <b>Tmdb:</b> {{movie.tmdbId}}
+            </li>
+        {% endfor %}
+    </ul>
